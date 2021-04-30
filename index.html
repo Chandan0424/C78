@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ProjectC78</title>
+    </head>
+    <body>
+        <style>
+            body
+            {
+                text-align: center;
+            }
+        </style>
+        <div>
+            <h1>My Family Book</h1>
+            <img id="Img" src="Family_Book.png">
+        </div>
+        <h3 id="Name">Family Book</h3>
+        <button onclick="change()">Next</button>
+        
+        <script>
+            var FamilyImg=["Family_Book.png","Dad.png","Mom.png"];
+            var FamilyNames=["Family Book","Padmanabha","Rupa"];
+            var im=0
+            var nm=0
+            function change()
+            {
+                document.getElementById("Img").src=FamilyImg[im];
+                im++;
+                if(im==3)
+                {
+                    im=0;
+                }
+                document.getElementById("Name").innerHTML=FamilyNames[nm];
+                nm++;
+                if(nm==3)
+                {
+                    nm=0;
+                }
+
+            }
+        </script>
+    </body>
+</html>
